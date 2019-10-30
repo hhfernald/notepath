@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # The function annotations in this module require Python 3.5 or higher.
 
+import os
+
 from typing import Dict
 from basics import FilePath, NotePath, Object, get_data_path, sort_notepaths
 from note import Note
@@ -23,6 +25,11 @@ class Archiver(Object):
         if not path:
             path = ARCHIVE_FILENAME
         self.path = get_data_path(path)
+
+        # Make sure the directory exists.
+        dirpath = os.path.dirname(self.path)
+        if not os.path.exists(dirpath):
+            os.makedirs(dirpath)
     
     def append_notes(self, notes: Dict[NotePath, Note]) -> None:
         notepaths = sort_notepaths(list(notes.keys()))
