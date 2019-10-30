@@ -1,0 +1,868 @@
+Before the first note, the script would output extra text that doesn't belong in a note --- transient information such as how many notes were generated and when the query was run. This is so the script's output can be redirected to a file, and when the file is edited and reloaded into the database, the "preamble" text is left out of the database.
+
+\===============================================================================
+
+Note with no path???
+
+Yes, this should work. The path will be "". This can't have any tags or fields, though.
+
+\===============================================================================
+\ air
+\ @
+\
+\ weight = 270
+
+We will have peace in our time. Our war will not end.
+
+\===============================================================================
+\ air/earth
+\ @
+\
+\ work, home
+\ price  = 6.61
+\ weight = 94
+
+We will have peace in our time. It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ air/earth
+\ @
+\
+\ home, urgent
+\ price = 12.74
+\ year  = 2064
+
+This is a note with the same notepath as another note, so this should become the second paragraph of the first note.
+
+\===============================================================================
+\ earth
+\ @
+\
+\ weight = 139
+\ price  = 10.21
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now.
+
+\===============================================================================
+\ earth/winter/air
+\ @
+\
+\ work, todo
+\ year = 2301
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fall
+\ @
+\
+\ year   = 1881
+\ weight = 146
+
+We will have peace in our time. We made love and we made war.
+
+\===============================================================================
+\ fall/air
+\ @
+\
+\ urgent, todo
+\ year = 2174
+
+It is time to show those dogs what we are made of! Our war will not end. Our time is now.
+
+\===============================================================================
+\ fall/air/earth
+\ @
+\
+\ home
+\ price = 17.62
+
+It is time to show those dogs what we are made of! Our time is now. Our war will not end.
+
+\===============================================================================
+\ fall/earth
+\ @
+\
+\ project, urgent
+\ weight = 271
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fall/moon
+\ @
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now.
+
+\===============================================================================
+\ fall/spring
+\ @
+\
+\ work, home
+
+It is time to show those dogs what we are made of! Our war will not end. Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ fall/stars
+\ @
+\
+\ work, urgent
+\ price = 11.47
+\ year  = 2156
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our war will not end.
+
+\===============================================================================
+\ fall/stars/earth
+\ @
+\
+\ price  = 15.05
+\ weight = 207
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our war will not end. We made love and we made war.
+
+\===============================================================================
+\ fall/summer/fire
+\ @
+\
+\ todo
+
+We will have peace in our time. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fall/summer/stars
+\ @
+\
+\ weight = 218
+\ price  = 18.05
+
+Our war will not end. Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ fall/summer/water
+\ @
+\
+\ price  = 8.13
+\ weight = 276
+
+Cry havoc and let slip the dogs of war! Our war will not end. Our time is now. We made love and we made war.
+
+\===============================================================================
+\ fall/sun
+\ @
+\
+\ urgent, home
+\ year   = 2281
+\ weight = 178
+
+Our war will not end. Our time is now.
+
+\===============================================================================
+\ fall/sun/air
+\ @
+\
+\ home
+\ year = 2372
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fall/sun/earth
+\ @
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fall/sun/moon
+\ @
+\
+\ weight = 89
+\ year   = 2714
+
+We will have peace in our time. Our war will not end. Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ fall/water/moon
+\ @
+\
+\ todo
+\ price = 14.42
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ fall/winter
+\ @
+\
+\ year   = 2061
+\ weight = 168
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our war will not end. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ fall/winter/air
+\ @
+\
+\ todo
+\ price  = 12.96
+\ weight = 290
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our time is now.
+
+\===============================================================================
+\ fall/winter/moon
+\ @
+\
+\ home, todo
+\ year = 2837
+
+Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fire
+\ @
+\
+\ home
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our time is now. We made love and we made war.
+
+\===============================================================================
+\ fire/air
+\ @
+\
+\ work, urgent
+\ year = 2123
+
+It is time to show those dogs what we are made of! We made love and we made war.
+
+\===============================================================================
+\ fire/earth
+\ @
+
+We will have peace in our time. It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ fire/fall
+\ @
+\
+\ project, urgent
+\ year = 2249
+
+Cry havoc and let slip the dogs of war! We will have peace in our time. Our time is now. Our war will not end.
+
+\===============================================================================
+\ fire/fall/air
+\ @
+\
+\ year = 2478
+
+We will have peace in our time. It is time to show those dogs what we are made of! We made love and we made war. Our war will not end.
+
+\===============================================================================
+\ fire/fall/moon
+\ @
+\
+\ work, urgent
+\ price  = 8.37
+\ weight = 191
+
+We will have peace in our time. Our war will not end. Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ fire/fall/spring
+\ @
+\
+\ price = 15.13
+\ year  = 2100
+
+Our war will not end. We made love and we made war.
+
+\===============================================================================
+\ fire/fall/stars
+\ @
+\
+\ urgent
+\ year = 2335
+
+Cry havoc and let slip the dogs of war! We will have peace in our time. Our time is now. Our war will not end.
+
+\===============================================================================
+\ fire/fall/water
+\ @
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ fire/moon
+\ @
+\
+\ year = 2036
+
+We will have peace in our time. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fire/moon/air
+\ @
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our time is now. Our war will not end.
+
+\===============================================================================
+\ fire/moon/earth
+\ @
+
+Cry havoc and let slip the dogs of war! It is time to show those dogs what we are made of! Our time is now. We made love and we made war.
+
+\===============================================================================
+\ fire/spring
+\ @
+\
+\ home
+\ year = 1826
+
+We will have peace in our time. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ fire/stars/winter
+\ @
+\
+\ project
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our war will not end.
+
+\===============================================================================
+\ fire/summer/earth
+\ @
+\
+\ weight = 270
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our war will not end.
+
+\===============================================================================
+\ fire/summer/moon
+\ @
+\
+\ price = 15.70
+\ year  = 2242
+
+We will have peace in our time. Our war will not end.
+
+\===============================================================================
+\ fire/summer/stars
+\ @
+\
+\ work
+\ price  = 13.86
+\ weight = 183
+
+It is time to show those dogs what we are made of! Our time is now. We made love and we made war. Our war will not end.
+
+\===============================================================================
+\ fire/summer/water
+\ @
+\
+\ project, home
+\ weight = 85
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ fire/sun
+\ @
+\
+\ year   = 2452
+\ weight = 94
+
+It is time to show those dogs what we are made of! Our war will not end. Our time is now. We made love and we made war.
+
+\===============================================================================
+\ fire/water
+\ @
+\
+\ work, home
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ fire/water/air
+\ @
+\
+\ todo
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ fire/water/spring
+\ @
+\
+\ urgent, todo
+
+Our war will not end. Cry havoc and let slip the dogs of war! We made love and we made war. Our time is now.
+
+\===============================================================================
+\ fire/winter
+\ @
+\
+\ home
+\ weight = 286
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now.
+
+\===============================================================================
+\ fire/winter/air
+\ @
+\
+\ price  = 5.90
+\ weight = 204
+
+Our war will not end. Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ fire/winter/spring
+\ @
+\
+\ project, todo
+\ weight = 81
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ moon
+\ @
+\
+\ project
+\ price = 6.25
+\ year  = 2690
+
+Our war will not end. Our time is now. We made love and we made war.
+
+\===============================================================================
+\ moon/air
+\ @
+\
+\ year  = 2196
+\ price = 12.83
+
+We will have peace in our time. It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ moon/spring
+\ @
+\
+\ price = 8.24
+
+Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ moon/spring/earth
+\ @
+\
+\ work, home, sun, moon, stars, earth, air, fire, water, spring, summer, fall, winter, project, coding, shopping, happiness, sorrow, anger, guilt, embarrassment, fear, disgust, man, woman, child, baby
+
+We will have peace in our time. We made love and we made war.
+
+\===============================================================================
+\ moon/winter
+\ @
+\ superfragilisticexpialidocious_superfragilisticexpialidocious_superfragilisticexpialidocious
+
+We will have peace in our time. Our war will not end. Our time is now.
+
+\===============================================================================
+\ spring
+\ @
+\
+\ price = 13.56
+\ year  = 1932
+
+Our war will not end. Our time is now. We made love and we made war.
+
+\===============================================================================
+\ spring/air
+\ @
+\
+\ weight = 142
+\ price  = 8.19
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now.
+
+\===============================================================================
+\ spring/earth
+\ @
+\
+\ project
+\ price  = 14.99
+\ weight = 231
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ stars
+\ @
+
+Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ stars/air
+\ @
+\
+\ work, urgent
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our time is now.
+
+\===============================================================================
+\ stars/earth
+\ @
+\
+\ price  = 10.20
+\ weight = 238
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ stars/moon
+\ @
+\
+\ price = 9.05
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our war will not end.
+
+\===============================================================================
+\ stars/spring
+\ @
+\
+\ urgent, todo
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ stars/water
+\ @
+\
+\ work
+\ price = 18.54
+
+We will have peace in our time. It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our war will not end.
+
+\===============================================================================
+\ stars/winter/earth
+\ @
+\
+\ project, urgent
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ stars/winter/spring
+\ @
+\
+\ price = 14.67
+\ year  = 2649
+
+Our war will not end. It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ summer
+\ @
+\
+\ year = 2331
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ summer/air
+\ @
+\
+\ work, todo
+
+We will have peace in our time. Our time is now. We made love and we made war.
+
+\===============================================================================
+\ summer/earth
+\ @
+\
+\ project
+\ year = 2482
+
+We will have peace in our time. Our war will not end. Our time is now. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ summer/fall/stars
+\ @
+\
+\ project
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now.
+
+\===============================================================================
+\ summer/moon/winter
+\ @
+\
+\ project
+
+Our war will not end. Our time is now.
+
+\===============================================================================
+\ summer/stars
+\ @
+\
+\ home
+\ weight = 202
+\ year   = 2261
+
+We will have peace in our time. Our war will not end. Our time is now. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ summer/sun/air
+\ @
+\
+\ home, todo
+
+Our war will not end. Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ summer/water
+\ @
+\
+\ weight = 84
+
+It is time to show those dogs what we are made of! Our war will not end. Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ summer/water/earth
+\ @
+\
+\ year   = 2001
+\ weight = 217
+
+It is time to show those dogs what we are made of! Our time is now.
+
+\===============================================================================
+\ summer/winter
+\ @
+\
+\ weight = 175
+\ year   = 2751
+
+We will have peace in our time. Our war will not end. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ summer/winter/air
+\ @
+\
+\ urgent, todo
+\ year  = 1884
+\ price = 5.05
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ sun
+\ @
+\
+\ urgent, home
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ sun/air
+\ @
+\
+\ weight = 286
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ sun/moon
+\ @
+\
+\ urgent, home
+\ price  = 9.62
+\ weight = 126
+
+We will have peace in our time. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ sun/moon/earth
+\ @
+\
+\ urgent, todo
+
+We will have peace in our time. Our time is now.
+
+\===============================================================================
+\ sun/moon/spring
+\ @
+\
+\ work
+
+It is time to show those dogs what we are made of! Our war will not end. Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ sun/spring
+\ @
+\
+\ work
+\ price = 7.70
+
+We will have peace in our time. Our war will not end. Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ sun/stars
+\ @
+
+Cry havoc and let slip the dogs of war! Our time is now. We made love and we made war.
+
+\===============================================================================
+\ sun/water/spring
+\ @
+\
+\ work
+\ price = 13.75
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ sun/winter/earth
+\ @
+\
+\ project
+\ weight = 248
+
+We will have peace in our time. Our time is now. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ sun/winter/spring
+\ @
+\
+\ price = 9.91
+
+It is time to show those dogs what we are made of! Our time is now. Our war will not end.
+
+\===============================================================================
+\ water
+\ @
+\
+\ work
+
+We will have peace in our time. It is time to show those dogs what we are made of! Our war will not end.
+
+\===============================================================================
+\ water/air
+\ @
+\
+\ price = 6.02
+
+We will have peace in our time. Our time is now.
+
+\===============================================================================
+\ water/earth
+\ @
+\
+\ year = 2598
+
+Cry havoc and let slip the dogs of war! Our war will not end. We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ water/moon
+\ @
+\
+\ work, todo
+\ weight = 204
+
+Our time is now. We made love and we made war.
+
+\===============================================================================
+\ water/moon/earth
+\ @
+\
+\ urgent
+\ price = 13.88
+\ year  = 2479
+
+We will have peace in our time. Cry havoc and let slip the dogs of war! We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ water/spring
+\ @
+\
+\ project
+
+Our war will not end. Our time is now.
+
+\===============================================================================
+\ water/spring/earth
+\ @
+\
+\ urgent
+
+We will have peace in our time. It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ water/stars
+\ @
+\
+\ year = 2247
+
+We will have peace in our time. Cry havoc and let slip the dogs of war!
+
+\===============================================================================
+\ water/winter
+\ @
+\
+\ weight = 177
+\ year   = 2300
+
+Cry havoc and let slip the dogs of war! It is time to show those dogs what we are made of! Our time is now. Our war will not end.
+
+\===============================================================================
+\ water/winter/air
+\ @
+\
+\ price = 12.29
+
+It is time to show those dogs what we are made of! Our war will not end. Our time is now.
+
+\===============================================================================
+\ water/winter/earth
+\ @
+\
+\ year   = 2696
+\ weight = 177
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! We made love and we made war. Our time is now.
+
+\===============================================================================
+\ water/winter/stars
+\ @
+
+It is time to show those dogs what we are made of! Our war will not end. Cry havoc and let slip the dogs of war! We made love and we made war.
+
+\===============================================================================
+\ winter
+\ @
+\
+\ urgent, home
+\ weight = 155
+\ year   = 2558
+
+We will have peace in our time. Our war will not end. We made love and we made war. Our time is now. It is time to show those dogs what we are made of!
+
+\===============================================================================
+\ winter/spring
+\ @
+\
+\ work, todo
+\ year   = 2593
+\ weight = 200
+
+It is time to show those dogs what we are made of! Cry havoc and let slip the dogs of war! Our time is now.
+
+\===============================================================================
+\ winter/spring/moon
+\ @
+\
+\ price = 7.99
+\ year  = 2844
+
+We will have peace in our time. It is time to show those dogs what we are made of!
+
