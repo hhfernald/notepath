@@ -12,7 +12,7 @@ Currently it has no installer, so you'd download the archive file, extract its c
 
 Since `notepath.py` is a terminal application, you can get a quick help screen by entering `./notepath.py --help`.
 
-**2019-10-29:** Notepath should be considered unfinished (alpha) software. Some features need to be added; some issues need to be ironed out. If you download this and play around with it, expect the occasional bug, and make backups.
+**2019-10-30:** Notepath should be considered unfinished (alpha) software. Some features need to be added; some issues need to be ironed out. If you download this and play around with it, expect the occasional bug, and make backups.
 
 
 ## Dependencies
@@ -26,7 +26,7 @@ Since `notepath.py` is a terminal application, you can get a quick help screen b
 
 ## Free Open-Source Software
 
-I wrote this application for no one but myself, but maybe its source code will be useful to someone else. I'm releasing IPyNotes under the MIT License. If you find anything useful in the code I've written, feel free to fork this project and build your own application.
+I wrote this application for no one but myself, but maybe its source code will be useful to someone else. I'm releasing Notepath under the MIT License. If you find anything useful in the code I've written, feel free to fork this project and build your own application.
 
 
 ## Anticipated questions
