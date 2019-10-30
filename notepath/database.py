@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # The function annotations in this module require Python 3.5 or higher.
 
+import os
 import re
 import sqlite3
 
@@ -31,7 +32,12 @@ class Database(Object):
             t = 'cannot create or open a database without a filepath'
             raise FileNotFoundError(t)
         self.db_path = db_path
-        
+
+        # Make sure the database directory exists.
+        dirpath = os.path.dirname(db_path)
+        if not os.path.exists(dirpath):
+            os.makedirs(dirpath)
+
         # Also permit an alternative path for the archive file.
         self._archive_path = archive_path
         
